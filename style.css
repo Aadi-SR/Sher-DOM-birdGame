@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.game {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-image: url("./assets/background_and_road.png");
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 -280px;
+
+    position: relative;
+    user-select: none;
+}
+
+
+.bird-image {
+    height: 50px;
+    position: absolute;
+    transition: transform 0.1s ease-out;
+    z-index: 10;
+}
+
+
+.pipe{
+    position: absolute;
+    width: 80px;
+    background: linear-gradient(90deg, #73bf2e 0%, #9ce659 40%, #548c20 100%);
+    border: 3px solid #2e520e;
+    border-radius: 4px;
+    z-index: 5;
+}
+
+.pipe-bottom {
+    transform: translateY(-100%);
+    top: 100%;
+}
+
+.score-display {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 48px;
+    font-family: 'Impact', 'Arial Black', sans-serif;
+    color: white;
+    text-shadow: 3px 3px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+    z-index: 20;
+}
+
+.game-over-screen {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.85);
+    padding: 30px 40px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    border: 3px solid #fff;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    z-index: 30;
+}
+
+.game-over-screen.active {
+    display: block;
+}
+
+.game-over-screen h2 {
+    font-size: 36px;
+    color: #ff4757;
+    margin-bottom: 10px;
+}
+
+.game-over-screen p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.game-over-screen button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #2ed573;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.game-over-screen button:hover {
+    background: #26af5f;
+}
+
