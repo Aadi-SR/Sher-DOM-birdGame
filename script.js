@@ -10,7 +10,7 @@ const GRAVITY = 0.20;
 const JUMP_FORCE = -6.5;
 const PIPE_SPEED = 2.5;
 const PIPE_SPAWN_INTERVAL = 1400; // milliseconds
-const GAP_HEIGHT = 240; // gap size between top & bottom pipe
+const GAP_HEIGHT = 340; // gap size between top & bottom pipe
 
 // Game State Variables
 let birdY = 200;
